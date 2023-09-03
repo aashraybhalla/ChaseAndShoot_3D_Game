@@ -1,22 +1,25 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Defender : PlayerBehavior
+public class Defender : MonoBehaviour
 {
     public Transform[] hidingSpots;
     public float hideDuration = 1f;
+    private bool isHiding;
+
+    private NavMeshAgent agent;
 
     private int currentHidingSpotIndex;
 
     private void Start()
     {
         currentHidingSpotIndex = Random.Range(0, hidingSpots.Length);
+        agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(hidingSpots[currentHidingSpotIndex].position);
     }
 
     private void Update()
     {
-        base.Update();
 
         if (!isHiding)
         {

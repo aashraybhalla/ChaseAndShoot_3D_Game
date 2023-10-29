@@ -1,7 +1,3 @@
-Certainly! Here's a sample README file for your "ChaseAndShoot" Unity 3D project, which you created to implement the NavMesh component:
-
----
-
 # ChaseAndShoot - Unity 3D NavMesh Project
 
 Welcome to the "ChaseAndShoot" project repository! This minor project was created to showcase the implementation of Unity's NavMesh component in a 3D environment. While it may be a simple project, it provides valuable insights into navigation and pathfinding systems using NavMesh. Whether you're a developer looking to learn or a fellow enthusiast, this README will guide you through the project.
